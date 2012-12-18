@@ -15,7 +15,7 @@ Copyright 2006 ThoughtWorks, Inc
  limitations under the License.
 -->
 <head>
-<META HTTP-EQUIV="Content-Type" CONTENT="text/html">
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html"/>
 <script language="javascript">
 <!--
 /*  flag to determine if event should be recorded. */
@@ -25,7 +25,7 @@ var sawCtrlKeyDown = false;
 /* Records an event in the events textarea */
 function recordEvent(e) {
     if (!recording) return;
-    
+
     if (!e) e = window.event; // Handle IE
     var eventMessage;
     if (!e) {
@@ -46,10 +46,10 @@ function recordEvent(e) {
 
     	if (e.shiftKey) {
 	      eventMessage += ' shiftKeyDown';
-            }            
+            }
     	if (e.metaKey) {
 	      eventMessage += ' metaKeyDown';
-            }            
+            }
         eventMessage += ')} ';
     }
     log(eventMessage);
