@@ -1,0 +1,42 @@
+{
+    "name": "dayax/dayax",
+    "type": "library",
+    "description": "dayax library project",
+    "keywords": ["library","framework"],
+    "homepage": "http://itstoni.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Anthonius Munthi",
+            "email": "contact@itstoni.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "require-dev":{
+        "symfony/browser-kit": "2.1.x",
+        "symfony/css-selector": "2.1.x",
+        "symfony/dom-crawler": "2.1.x",
+        "symfony/finder": ">=2.0.0",
+        "symfony/filesystem": ">=2.0.0",
+        "symfony/console": ">=2.0.0",
+
+        "phpunit/phpunit": "3.7.x",
+        "phpunit/php-invoker": "1.1.x",
+        "phpunit/phpunit-selenium": "1.2.x"
+    },
+    "replace": {
+        "dayax/core": "self.version",
+        "dayax/collections": "self.version"
+    },
+    "autoload": {
+        "psr-0": { "dayax\\": "src/" }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

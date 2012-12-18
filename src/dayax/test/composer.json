@@ -1,0 +1,29 @@
+{
+    "name": "dayax/test",
+    "type": "library",
+    "description": "A simple functional test with phpunit",
+    "homepage": "https://github.com/dayax/test",
+    "license": "MIT",
+    "keywords": [
+        "phpunit",
+        "test"
+    ],
+    "authors": [
+        {
+            "name": "Anthonius Munthi",
+            "email": "me@itstoni.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.0",
+        "symfony/browser-kit": "2.1.*",
+        "symfony/css-selector": "2.1.*",
+        "symfony/dom-crawler": "2.1.*"
+    },
+    "autoload":{
+        "psr-0":{
+            "dayax\\test": ""
+        }
+    }
+}
