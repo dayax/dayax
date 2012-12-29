@@ -2,7 +2,7 @@
 
 <project name="dayax" default="build">
  <target name="build"
-   depends="prepare,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpdox,phpunit,phpcb"/>
+   depends="prepare,composer,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpdox,phpunit,phpcb"/>
 
  <target name="build-parallel"
    depends="prepare,tools-parallel,phpunit,phpcb"/>
@@ -118,5 +118,11 @@
    <arg value="--output" />
    <arg path="${basedir}/build/code-browser" />
   </exec>
+ </target>
+ <target name="composer" description="Update package dependencies">
+    <exec executable="/apps/bin/composer">
+        <arg value="update"/>
+        <arg value="--dev"/>
+    </exec>
  </target>
 </project>
