@@ -12,13 +12,8 @@
         }
     ],
     "require": {
-<<<<<<< HEAD
         "php": ">=5.3.3"     
     },    
-=======
-        "php": ">=5.3.3"
-    },
->>>>>>> master
     "replace": {
         "dayax/core": "self.version",
         "dayax/collections": "self.version"
