@@ -11,13 +11,6 @@
          syntaxCheck="false"
          bootstrap="autoload.php.dist"
 >
-    <php>
-        <ini name="intl.default_locale" value="en"/>
-        <ini name="intl.error_level" value="0"/>
-        <ini name="memory_limit" value="-1"/>
-        <var name="host" value="dayax.dev"/>
-        <var name="port" value="80"/>
-    </php>
     <testsuites>
         <testsuite name="dayax library test suite">
             <directory>./src/dayax/*/tests</directory>
