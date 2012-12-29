@@ -115,10 +115,9 @@
    <arg path="${basedir}/build/code-browser" />
   </exec>
  </target>
- <target name="composer" description="Update package dependencies">
+ <target name="composer" description="Dump autoloader">
     <exec executable="/apps/bin/composer">
-        <arg value="update"/>
-        <arg value="--dev"/>
+        <arg value="dumpautoload"/>        
     </exec>
  </target>
 </project>
