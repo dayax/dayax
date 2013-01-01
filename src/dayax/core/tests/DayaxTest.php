@@ -28,11 +28,11 @@ class DayaxTest extends TestCase
     {
         $this->assertTrue(is_object(Dayax::getLoader()));
     }
-
-    public function testShouldReturnThePathOfNamespace()
+    
+    public function testShouldReturnTheRootDir()
     {
-        $this->assertTrue(is_dir(Dayax::getPathOfNamespace('dayax\core\resources')));
-        $this->assertTrue(is_file(Dayax::getPathOfNamespace('dayax\core\ExceptionFactory')));
+        $rootDir = realpath(__DIR__.'/../../../../');        
+        $this->assertEquals($rootDir,Dayax::getRootDir());
     }
 }
 
