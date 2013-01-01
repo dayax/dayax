@@ -7,3 +7,4 @@ develop: [![Build Status](https://www.travis-ci.org/dayax/dayax.png?branch=devel
 
 When The Framework Is Not Enough
 --------------------------------
+dayax is a collection of classes that I often use in my project.
