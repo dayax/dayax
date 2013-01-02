@@ -2,6 +2,7 @@ phpunit.xml
 composer.lock
 composer.phar
 autoload.php
-/vendor/
-/cache/
-/build/
+vendor
+cache
+build
+nbproject
