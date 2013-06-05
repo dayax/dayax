@@ -33,4 +33,10 @@ class Test
     {
         throw new UntranslatedException('untranslated');
     }
+    
+    public static function throwWithCatalog2()
+    {
+        $message = \dayax\core\Translator::getInstance()->translate('catalog2',array('thrower'));
+        throw new TestException($message);
+    }
 }
